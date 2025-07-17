@@ -1,6 +1,6 @@
 # Temperature Converter - React App
 
-A beautiful and modern temperature converter built with React that allows you to convert between Celsius, Fahrenheit, and Kelvin.
+A beautiful and modern temperature converter built with React that allows you to convert between Celsius, Fahrenheit, and Kelvin. based on the roadmap challenge: [temp-converter](https://roadmap.sh/projects/temperature-converter)
 
 ## Features
 
