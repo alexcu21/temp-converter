@@ -1,6 +1,6 @@
-# Temperature Converter - Vue.js App
+# Temperature Converter - Svelte App
 
-A beautiful and modern temperature converter built with Vue.js that allows you to convert between Celsius, Fahrenheit, and Kelvin.
+A beautiful and modern temperature converter built with Svelte that allows you to convert between Celsius, Fahrenheit, and Kelvin.
 
 ## Features
 
@@ -25,10 +25,10 @@ npm install
 
 2. Start the development server:
 ```bash
-npm run serve
+npm run dev
 ```
 
-3. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+3. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
 ## How to Use
 
@@ -41,31 +41,30 @@ The convert button will be disabled until all three fields are properly filled.
 
 ## Available Scripts
 
-- `npm run serve` - Runs the app in development mode
+- `npm run dev` - Runs the app in development mode
 - `npm run build` - Builds the app for production
-- `npm run lint` - Lints and fixes files
+- `npm run preview` - Preview the production build
 
 ## Technologies Used
 
-- Vue.js 3
+- Svelte 4
+- Vite (Build tool)
 - CSS3 with modern features (Grid, Flexbox, Animations)
-- Vue CLI
 
 ## Project Structure
 
 ```
 src/
-├── App.vue         # Main application component
-├── main.js         # Application entry point
-└── index.css       # Global styles
+├── App.svelte       # Main application component
+├── main.js          # Application entry point
+└── index.css        # Global styles
 
-public/
-└── index.html      # HTML template
+index.html           # HTML template
 ```
 
-## Migration from React
+## Migration from Vue.js
 
-This Vue.js version includes all the functionality from the React version:
+This Svelte version includes all the functionality from the Vue.js version:
 
 - ✅ Temperature conversion logic
 - ✅ Button enable/disable functionality
@@ -73,3 +72,5 @@ This Vue.js version includes all the functionality from the React version:
 - ✅ Modern UI improvements
 - ✅ Responsive design
 - ✅ Same beautiful styling and animations
+- ✅ Reactive statements with `$:` syntax
+- ✅ Simplified component structure
