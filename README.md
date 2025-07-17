@@ -1,6 +1,6 @@
-# Temperature Converter - React App
+# Temperature Converter - Vue.js App
 
-A beautiful and modern temperature converter built with React that allows you to convert between Celsius, Fahrenheit, and Kelvin.
+A beautiful and modern temperature converter built with Vue.js that allows you to convert between Celsius, Fahrenheit, and Kelvin.
 
 ## Features
 
@@ -25,10 +25,10 @@ npm install
 
 2. Start the development server:
 ```bash
-npm start
+npm run serve
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 ## How to Use
 
@@ -41,36 +41,35 @@ The convert button will be disabled until all three fields are properly filled.
 
 ## Available Scripts
 
-- `npm start` - Runs the app in development mode
+- `npm run serve` - Runs the app in development mode
 - `npm run build` - Builds the app for production
-- `npm test` - Launches the test runner
-- `npm run eject` - Ejects from Create React App (one-way operation)
+- `npm run lint` - Lints and fixes files
 
 ## Technologies Used
 
-- React 18
+- Vue.js 3
 - CSS3 with modern features (Grid, Flexbox, Animations)
-- Create React App
+- Vue CLI
 
 ## Project Structure
 
 ```
 src/
-├── App.js          # Main application component
-├── App.css         # Component-specific styles
-├── index.js        # Application entry point
+├── App.vue         # Main application component
+├── main.js         # Application entry point
 └── index.css       # Global styles
 
 public/
 └── index.html      # HTML template
 ```
 
-## Migration from Vanilla JavaScript
+## Migration from React
 
-This React version includes all the functionality from the original vanilla JavaScript version:
+This Vue.js version includes all the functionality from the React version:
 
 - ✅ Temperature conversion logic
 - ✅ Button enable/disable functionality
 - ✅ Input validation
 - ✅ Modern UI improvements
 - ✅ Responsive design
+- ✅ Same beautiful styling and animations
