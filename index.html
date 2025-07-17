@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <script type="module" src="/src/main.ts"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-500 to-purple-600 min-h-screen flex items-center justify-center p-4">
+    <div class="card animate-fade-in-up">
+        <h1 class="text-3xl font-bold text-gradient mb-2 text-center">Temperature Converter</h1>
+        <p class="text-gray-600 mb-6 text-center">Enter the temperature and select units and submit</p>
+        <div class="space-y-4 mb-6">
+            <input 
+                type="number" 
+                id="temperature" 
+                placeholder="Temperature"
+                class="input-field"
+            >
+            <select 
+                id="fromUnit"
+                class="input-field"
+            >
+                <option value="select">From Unit</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <select 
+                id="toUnit"
+                class="input-field"
+            >
+                <option value="select">To Unit</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <button 
+                id="convert" 
+                disabled
+                class="btn-primary w-full"
+            >
+                Convert
+            </button>
+        </div>
+        <p id="output" class="output-message"></p>
+    </div>
+</body>
+</html> 
