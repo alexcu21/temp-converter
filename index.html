@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Temperature Converter</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempeture converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tempeture converter</h1>
+        <p>Enter the tempeture and select units and submit</p>
+        <div class="input-container">
+            <input type="number" id="tempeture" placeholder="tempeture">
+        <select name="from_unit" id="from_unit">
+            <option value="select">From Unit</option>
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <select name="to_unit" id="to_unit">
+            <option value="select">To Unit</option>
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <button id="convert" disabled>Convert</button>
+        </div>
+        <p id="output"></p>
+    </div>
+    <script src="temp-converter.js" defer></script>
+</body>
 </html> 
